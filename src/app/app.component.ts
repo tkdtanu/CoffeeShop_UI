@@ -1,7 +1,16 @@
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  templateUrl: './app.component.html'
 })
-export class AppComponent  { name = 'CoffeeShop User'; }
+export class AppComponent {
+  name = 'CoffeeShop Management System';
+
+  constructor(private router: Router) {
+    router.navigate(['/welcome']);
+      }
+  
+}
