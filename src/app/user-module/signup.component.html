@@ -1,1 +1,27 @@
 <h1>Welcome To Create User</h1>
+<div>
+    <form [formGroup]="form">
+        <fieldset>
+            <legend>SignUP</legend>
+            <div class="form-field">
+                <label>Name:</label>
+                <input name="name" formControlName="name" >
+            </div>
+            <div class="form-field">
+                <label>UserName:</label>
+                <input name="username" formControlName="username">
+            </div>
+            <div class="form-field">
+                <label>Password:</label>
+                <input name="password" formControlName="password" type="password">
+            </div>
+            <div class="form-field">
+                <label>DOB:</label>
+                <input name="dob" formControlName="dob" >
+            </div>
+        </fieldset>
+        <div class="form-buttons">
+            <button class="button button-primary" (click)="signup()">Login</button>
+        </div>
+    </form>
+</div>

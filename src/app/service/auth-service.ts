@@ -9,4 +9,7 @@ export class AuthService {
     login(username: string, password: string) {
         return this.http.post(this.host +'/api/user/auth/login', { username, password });
     }
+    signup(user: any) {
+        return this.http.post(this.host +'/api/user/auth/signup', user);
+    }
 }
