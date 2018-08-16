@@ -5,23 +5,24 @@
             <legend>SignUP</legend>
             <div class="form-field">
                 <label>Name:</label>
-                <input name="name" formControlName="name" >
+                <input name="name" formControlName="name" >* Required
             </div>
             <div class="form-field">
                 <label>UserName:</label>
-                <input name="username" formControlName="username">
+                <input name="username" formControlName="username">* Required
             </div>
             <div class="form-field">
                 <label>Password:</label>
-                <input name="password" formControlName="password" type="password">
+                <input name="password" formControlName="password" type="password">* Required
             </div>
             <div class="form-field">
                 <label>DOB:</label>
-                <input name="dob" formControlName="dob" >
+                <input name="dob" formControlName="dob" >* Required
             </div>
         </fieldset>
         <div class="form-buttons">
-            <button class="button button-primary" (click)="signup()">Login</button>
+            <button class="button button-primary" (click)="signup()">Signup</button>
+            <button class="button button-primary" (click)="login()">Login</button>
         </div>
     </form>
 </div>

@@ -35,4 +35,7 @@ export class SignUpComponent {
         }
       );
   }
+  login() {
+    this.router.navigate(['/login']);
+  }
 }
